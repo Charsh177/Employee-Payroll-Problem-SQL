@@ -1,0 +1,21 @@
+mysql> SELECT salary FROM employee_payroll WHERE name = 'Anup';
++--------+
+| salary |
++--------+
+|  35000 |
++--------+
+1 row in set (0.00 sec)
+
+mysql> SELECT salary FROM employee_payroll WHERE start BETWEEN CAST('2018-05-31'AS DATE) AND DATE(NOW());
++--------+
+| salary |
++--------+
+|  10000 |
+|  35000 |
+|  17000 |
+|  27000 |
+|  17000 |
++--------+
+5 rows in set (0.06 sec)
+
+mysql>
